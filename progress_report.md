@@ -7,7 +7,7 @@ Writing up rough draft project plan with some additional ideas in more detail
 
 #### Next goals
 - CR data included .py file to convert html text files to json files, run this -> OK
-- Confirm with Stuart at Kryogenix origins of transcripts
+- Confirm with Stuart at Kryogenix origins of transcripts ->
 	- CRTranscript (a fan movement) did most of C2 but according to CR [here](https://critrole.com/cr-transcript-closed-captions-update/) this changed around episode 54
 - start building df for CR data to explore what is included (time stamps?) -> OK
 - explore possibility of comparing with other similar data -> OK
@@ -33,7 +33,7 @@ Contacted Stuart about the origins of transcripts & am waiting for answers
 ### Next goals
 - build dfs for Aabria data
 	- D20 data does not include timestamp information and CR does, hoping this doesn't pose a problem or i can fix it
-- pickle the CR data in its completed base format 
+- pickle the CR data in its completed base format -> OK
 - save D20 data one way or the other, start procesing
 - read Jack's shared paper they helpfully shared with me
 - ID helpful resources and get reading
@@ -41,5 +41,11 @@ Contacted Stuart about the origins of transcripts & am waiting for answers
 	- adding colums for tokens, types, count, etc
 	- some basic EDA to start 
 
+### February 23
+Identified method of downloading D20 transcripts, may not need webscraping after all, have to verify what they actually look like first
+Got started on CR EDA - editing timestamp columns, getting to work on seeking out lines to eliminate (non-speech lines like "(laughs)") 
+	- what to do with lines that are a combo of "(noise) and regular speech" - tagging vs eliminating 
 
-
+- Confirm with Stuart at Kryogenix origins of transcripts
+- identify some known cases of speech overlap (I remember an event in episode 2 where two people yelled at the same time at someone else) to verify timestamp details
+- I recall seeing some marker for singing in the text files but since singing is still a speech event I won't exclude it

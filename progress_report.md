@@ -34,9 +34,9 @@ Contacted Stuart about the origins of transcripts & am waiting for answers
 - build dfs for Aabria data
 	- D20 data does not include timestamp information and CR does, hoping this doesn't pose a problem or i can fix it
 - pickle the CR data in its completed base format -> OK
-- save D20 data one way or the other, start procesing
-- read Jack's shared paper they helpfully shared with me
-- ID helpful resources and get reading
+- save D20 data one way or the other, start procesing -> OK
+- read Jack's shared paper they helpfully shared with me ->
+- ID helpful resources and get reading ->
 - start some early data processing for CR data
 	- adding colums for tokens, types, count, etc
 	- some basic EDA to start 
@@ -87,3 +87,32 @@ D20 processing steps (simplified) *[source](https://dimension20.fandom.com/wiki/
 Sharing plan:
 - Still waiting for confirmation about CR data license info & how much/what I can and will share. Operating now on the assumption that I won't be sharing more than word types list
 - D20 license info states the data can be shared and that any derivatives from it must also be made sharable under the same license
+
+
+### March 5
+
+I've finally gotten my CR data into a DF that is ready for analysis. After a full weekend of regex I've split the dialogue column into three parts: 
+dialogue, \[inaudible\] and \(sounds\) I've pickled it and I'm going to export it as a CSV to upload to my github in its completed form.
+
+I have the D20 data to a point where I can start working. Rather than use the .docx format I saved the files in an html format and converted them to .json files.
+These can be easily read into a df and treated with regex to split into two columns as the base format is one full column including name and speech together. 
+
+Some new data pitfalls have arrived
+- D20 transcripts are fanmade and therefore, some of the more recent episodes aren't finalized yet. They have full dialogue transcribe but not the associated speaker
+	- I'm going to make note of which ones I'm missing and will check again at a later date, hoping more will be finished. 
+	- for the time being I'll start processing the data into a good df & get the process down, if more episode finish i'll have the process saved
+- D20 transcripts differentiate between when a person is speaking as themselves and when they're speaking in character
+	- Ex. If player Brennan is speaking to the table in general it will be marked Brennan: but if he is speaking as his character it will be marked Tula:
+	- Plan is to make a series of series similar to the CR data nonspeech work to make a "player" column rather than just names.
+	Since each play has one character name it won't be difficult, any character name that isn't associated with one of the players will be the DM (Aabria)
+	
+Identified some early sources for research about hedging
+	
+Next goals:
+- -> email Stuart finally
+- -> read Jack's paper
+- -> ID more source papers
+- Save and upload CR DF as csv file 
+- Get to processing D20 data into DF for study
+- Make note of which episodes were not completed for D20 to check again in a few weeks
+- Fix the data files according to feedback so CR repository is as it should be

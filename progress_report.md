@@ -112,7 +112,7 @@ Next goals:
 - -> email Stuart finally
 - -> read Jack's paper
 - -> ID more source papers
-- Save and upload CR DF as csv file 
+- Save and upload CR DF as csv file  -> OK
 - Get to processing D20 data into DF for study
-- Make note of which episodes were not completed for D20 to check again in a few weeks
+- Make note of which episodes were not completed for D20 to check again in a few weeks -> MisMag2 ep 3-11, MisMag2 1-11
 - Fix the data files according to feedback so CR repository is as it should be

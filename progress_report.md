@@ -109,10 +109,14 @@ Some new data pitfalls have arrived
 Identified some early sources for research about hedging
 	
 Next goals:
-- -> email Stuart finally
+- -> email Stuart finally -> OK
 - -> read Jack's paper
 - -> ID more source papers
 - Save and upload CR DF as csv file  -> OK
 - Get to processing D20 data into DF for study
-- Make note of which episodes were not completed for D20 to check again in a few weeks -> MisMag2 ep 3-11, MisMag2 1-11
+- Make note of which episodes were not completed for D20 to check again in a few weeks -> MisMag2 ep 3-11, MisMag2 1-11, Burrow's End AP 6-10
 - Fix the data files according to feedback so CR repository is as it should be
+
+
+### Second Progress Report - March 21 2025
+

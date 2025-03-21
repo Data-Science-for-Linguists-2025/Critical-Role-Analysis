@@ -120,3 +120,55 @@ Next goals:
 
 ### Second Progress Report - March 21 2025
 
+First, an update from Progress Report #1 feedback:
+- I removed my notebook files from data_samples and created instead the [data_processing](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/tree/main/data_processing) folder
+	- these files show the work I've done to my raw data to get it into a usable DF format. Lots and lots of regex.
+- The [data_samples](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/tree/main/data_samples) folder now contains one episode from my CR data and one episode of my D20 data in its raw format and in an exported CSV file
+	- Running the math, uploading the .json and .csv files of one CR episode is .006$ of the 147 episodes for campaign 2
+- I've updated my README file to include column name descriptions, and will continue to update it for D20
+
+LICENSE INFO:
+License information has been secured for D20 data for a while now, for Critical Role, still in the air. 
+I confirmed the source of the data from Stuart at Kryogenix, he got them straight off of the full length youtube videos. That means they're
+primarily from a fan-created effort to subtitle the show, and half from the professional service CR hired part way through the season.
+Very likely to play it safe I will keep my full data sharing to exclude full word tokens for the entire CR series, but I still hope to still 
+hear back from the fan-transcribers with licensing information. For now, I'll be operating under this basis.
+
+DATA INFO:
+Critical Role data is ready for analysis in its current form.
+D20 data is 99% to ready for analysis. I'm uploading a csv file of one episode from my DF, but will replace it once I've reached completed processing.
+
+I wish I had more new data and analysis to upload, but so many of my efforts until now were focused on wrangling my data. 
+What I can say is that my two data sets are pretty different from one another. The D20 data is a *lot* smaller than the CR data. 
+At 75,938  lines (for now), the D20 data is only 17% the total of CR (at 434,052) lines.
+Matt, the CR DM has 111,729 spoken lines, and Aabria has 27,029. However, when considered *in proportion* to the rest of the data sets, I believe this will still be interesting.
+
+JUPYTER NOTEBOOKS:
+I've updated my data processing files to include more informative section headers and included more notes and descriptions of the
+step-by-step processes taken in the building of my dataframes. 
+
+I plan to use the NEW CONTINUING method to my notebooks, and will update them accordingly as well with this information, and which step
+of the project each notebook is associated with. The basic structure thus far is:
+- processing and opening data (called file_data)
+	- in this notebook I load in my data and get it into a basic dataframe format
+- cleaning and organizing data (called file_cleaning)
+	- this includes splitting nonspeech information from speech, correcting errors, (for d20) creating name columns etc
+
+The third tier of continuing notebooks will be file_split, in which I work with the data in its split (final) format. 
+This is where I will do analysis, splitting by role (DM vs Player), gender, and so on. I have taken very early steps into this work, but
+not yet very in depth. When not working on homework three recently, I've been working on the regex to get my D20 data into a good format.
+Now that it's almost complete, I can really dive in and get to work. 
+
+DATA SHARING:
+As I said above, I plan to not share the Critical Role raw data, but once I've done some processing, I will publish a completed .csv of my
+CR data *excluding* "text" or any kind of word token columns. I will eliminate down to word counts and information derived from the text (speech).
+
+I will, however, share a full csv of my D20 data. Per the license information, the transcripts are free to use for any purpose including commercial,
+and I believe work done with the transcripts should be shared as well. If others want to use it, they should be free to do so.
+
+LICENSE:
+I will update my license.md to fit with *my* license information while noting the licenses my datasets are under elsewhere. 
+Looking at the "choosealicense" quick guide I intend to post my data and information with the CC-BY-SA license type
+(the same time I was able to get the d20 data under). Since my data comes from a community made with fan-lead efforts with the intention
+to be shared with others, I want what I create from that to be shared under the same principle. 
+

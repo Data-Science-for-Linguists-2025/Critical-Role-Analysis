@@ -140,8 +140,8 @@ D20 data is 99% to ready for analysis. I'm uploading a csv file of one episode f
 
 I wish I had more new data and analysis to upload, but so many of my efforts until now were focused on wrangling my data. 
 What I can say is that my two data sets are pretty different from one another. The D20 data is a *lot* smaller than the CR data. 
-At 75,938  lines (for now), the D20 data is only 17% the total of CR (at 434,052) lines.
-Matt, the CR DM has 111,729 spoken lines, and Aabria has 27,029. However, when considered *in proportion* to the rest of the data sets, I believe this will still be interesting.
+At 99,344  lines (for now), the D20 data is only 22% the total of CR (at 434,052) lines.
+Matt, the CR DM has 111,729 spoken lines, and Aabria has 34,659. However, when considered *in proportion* to the rest of the data sets, I believe this will still be interesting.
 
 JUPYTER NOTEBOOKS:
 I've updated my data processing files to include more informative section headers and included more notes and descriptions of the

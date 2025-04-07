@@ -172,3 +172,36 @@ Looking at the "choosealicense" quick guide I intend to post my data and informa
 (the same time I was able to get the d20 data under). Since my data comes from a community made with fan-lead efforts with the intention
 to be shared with others, I want what I create from that to be shared under the same principle. 
 
+
+### Third Progress Report - April 7 2025
+
+Both data sets are in full working order. In my early analysis attempts I identified a few token lines that were problematic and were eliminated.
+One was some encoding mistakenly transcribed and another was a produced song (not a song being sung live) for example.
+
+From last time, some additional data was added. The question of jargon came up in discussions about what is worth analyzing in the data.
+Notebook [here](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/notebooks/DND_Jargon.ipynb)
+My goal and process for measuring jargon in my speech data is this:
+1. process and tokenize all text from the Player's Handbook, essentially the instructional book of how to play DND
+2. conduct readability score testing on the full text to find a baseline of complexity for the text (to compare to later)
+3. lowercase and create a set of the full PHB text
+4. compare lists of PHB set and Norvig Google data set and return tokens not found in Google list -> this is the list of jargon
+
+Began data processing [here](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/notebooks/cr_analysis.ipynb) 
+I've been using the new continuing method and numbering/describing the order of files in data_processing, but I intend the notebooks subfolder to hold
+my JPN processing files in their final form to be read in. Let me know if I need to update this as well to make it obvious.
+
+So far I've run the CR data through the basics, line count, tokens, word count, word length, types & type count, sent count, sent length, all with some
+interesting visualizations and early analysis. 
+Next steps:
+1. Split the data into my pre-determined categories (men/women, player/dm)
+2. look at these parameters by group instead of per player
+3. Look into interruptions, hedging, and jargon by group
+4. do readability score for groups too, just see if it's interesting
+5. do all of that exactly again for the D20 data
+
+My data files are complete, but not in the format I intend to share them in yet. I will be uploading what I can as soon as I can
+
+Still need to update my license file for my data - I intend to share all that I can so that other people can use it if they choose to.
+will update my README file with a link to my guestbook and wait for more thorough structure guidance to update anything else
+
+

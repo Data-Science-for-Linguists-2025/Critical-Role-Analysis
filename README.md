@@ -15,5 +15,7 @@ Description of data columns (preview single episode [here](https://github.com/Da
 
 Note: in linked preview these columns are easier to discern in the Code tab than in the Preview tab
 
+Visitor Log:
 
+A link to my guestbook is [here](https://github.com/Data-Science-for-Linguists-2025/Class-Lounge/blob/main/guestbooks/ashley.md)
 

@@ -1,21 +1,23 @@
 # Critical-Role-Analysis
-Final project by Ashley Bakaitus. Discourse analysis of D&amp;D podcasts Critical Role and Dimension20
+Final project by Ashley Bakaitus.<br> 
+Discourse analysis of D&amp;D podcasts Critical Role and Dimension20<br>
+April 2025, aeb145@pitt.edu
 
-Critical Role transcripts sourced from [Kryogenix](https://www.kryogenix.org/crsearch/html/index.html#c2) and created by CRTranscript, a fan-led transcription service, Critical Role, and compiled by Stuart Langridge.
+The data used in this project was extracted from videos, compiled, and edited primarily by fans and partially by a professional transcription serivce (for subtitles).
+Critical Role transcripts sourced from [Kryogenix](https://www.kryogenix.org/crsearch/html/index.html#c2) and created by CRTranscript, a fan-led transcription service, Critical Role, and compiled by Stuart Langridge.<br>
+Dimension 20 transcripts sourced from the [fandom wiki](https://dimension20.fandom.com/wiki/Episode_Transcripts) with thanks to users: OliverC, Rachel S., Claire B., gluegunshots, Mer, Kyber Bonsai, tevildo, solys, Tillie the Paladin, kindlestuck, and Ethan Belanger.
 
-Description of data columns (preview single episode [here](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/data_samples/CR_ep2.csv), .006% of full dataset):
+## Hub Directory:<br>
+- final_report
+- [D20json/](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/tree/main/D20json): a collection of the json translated files of the D20 transcripts divided by season/campaign
+- [data_processing/](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/tree/main/data_processing): JP notebooks showing my process after data aquistion, building dataframes (1-cr, d20) and cleaning data (2-cr, d20)
+- [data_samples/](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/tree/main/data_samples): samples of the data as I worked with it (1 episode each), raw data as html/json and my starting datafame for the same episodes
+- [figures/](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/tree/main/figures): all graphs and figures from my analysis notebook, labeled by dataset and measurement
+- [notebooks/](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/tree/main/notebooks): measurement of readability & jargon and analysis per dataset JP notebooks
+- [LICENSE.md](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/LICENSE.md): license information for my project
+- [project_plan.md](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/project_plan.md): my plan for this project
+- [progress_report.md](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/progress_report.md): progress reports, a record of my steps throughout the process working on my project
 
-"index" - line index **per episode** (regular index is for full df of 147 files)<br>
-"name" - speaker name<br>
-"text" - full text of transcribed speech event<br>
-"episode" - which episode associated with line (in preview, this column is only populated with '2')<br>
-"timestamp" - timestamp information for start of speech event in HH:MM:SS format<br>
-"inaudible_speech" - any speech event partially or entirely tagged as \[inaudible\] (in ep 2 this column is empty)<br>
-"nonspeech" - any line of speech partially or entirely consisting of non-speech values (e.g. (laughter), (yells) or sound effects)
-
-Note: in linked preview these columns are easier to discern in the Code tab than in the Preview tab
-
-Visitor Log:
-
-A link to my guestbook is [here](https://github.com/Data-Science-for-Linguists-2025/Class-Lounge/blob/main/guestbooks/ashley.md)
+## Visitor Log:<br>
+A link to my guestbook is [here](https://github.com/Data-Science-for-Linguists-2025/Class-Lounge/blob/main/guestbooks/ashley.md), drop a message!
 

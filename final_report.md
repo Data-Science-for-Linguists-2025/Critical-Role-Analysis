@@ -51,6 +51,7 @@ Similarly, my early intention for this project was to include interruption as on
 
 **Critical Role**
 
+![screenshot](figures/cr_SpeechTurnGender.png)
 
 
 **D20**
@@ -62,21 +63,21 @@ Similarly, my early intention for this project was to include interruption as on
 
 **Critical Role**
 
-
+![screenshot](figures/cr_TokCountGender.png)
 
 **D20**
 
-
+![screenshot](figures/d20_TokCountGender.png)
 
 ### Sentence Length
 
 **Critical Role**
 
-
+![screenshot](figures/cr_SentLenGender.png)
 
 **D20**
 
-
+![screenshot](figures/d20_SentLenGender.png)
 
 ### Hedging
 

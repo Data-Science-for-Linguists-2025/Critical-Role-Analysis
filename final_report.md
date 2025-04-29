@@ -7,24 +7,22 @@ April 29, 2025
 
 It took me some time to find inspiration for a project subject. I'm glad I was inspired to look into something I personally really enjoy: D&D!<br>
 
-Sourcing my data was not very difficult. Both shows have very dedicated fans who have put in a lot of work to transcribing, editing, organizing, and making the scripts available to the public for use.
+Sourcing my data was not very difficult. Both shows have very dedicated fans who have put in a lot of work to transcribing, editing, and making the scripts available to the public for use.
 
 Data cleaning was, by far, the part of this project with the most bumps in the road. Those notebooks can be viewed [here](https://nbviewer.org/github/Data-Science-for-Linguists-2025/Critical-Role-Analysis/tree/main/data_processing/).<br>
 This was my first time working with json files, and the CR file was very nested. Once I studied up on json normalization, though, getting a base dataframe was just a matter of defining a few functions and testing them out!
 
 For Critical Role, it was the ["nonspeech"](https://nbviewer.org/github/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/data_processing/2_cr_cleaning.ipynb#Splitting-and-cleaning) column that was the most time consuming.
 I had several false starts working at it to separate out and get a clean column containing only speech information. One early attempt included cloning the speech column entirely with the thought of deleting anything in (brackets) from one and deleting anything not in (brackets) from the other. 
-This wasn't quite as simple as that in the end, and I ultimately found the method of creating many small Pandas Series much more productive. I frequently ran into my regex scanning and separating capturing the same index rows multiple times, giving me a duplicate index error, but I fixed it by creating more and more narrow Series and tweaking my regex. 
+It wasn't quite as simple as that in the end, and I ultimately found the method of creating many small Pandas Series much more productive. I frequently ran into my regex scanning and separating capturing the same index rows multiple times, giving me a duplicate index error, but I fixed it by creating more and more narrow Series and tweaking my regex. 
 It took a long while on my first go, but the feeling of when my duplicate index check first cleared with no duplicates was beautiful. 
 
 With the Dimension 20 data there was much more cleanup required. The regex routine was less complicated since I'd spent so much time on it before, but the data was more difficult. Everything was included in the same column as the speech, and nonspeech information like sound effects was not marked with brackets. 
 While this took more time, there were just a few more steps to undertake, seen [here](https://nbviewer.org/github/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/data_processing/2_aabria_cleaning.ipynb#Concatenating-and-Splitting).
 
-Even once I had my data in hand I didn't immediately know where to start. Only through starting exploration and having conversation did I stumble into my analysis goals and some of my more interesting ideas like the question of jargon.
-
 ## Data Information
 
-I ended up with a total of 201 json files (147 CR and 54 D20) in the shape of two dataframes. Once all dataframes were in their final forms, this put us at 434,050 rows (or speech turns) in the Critical Role data, and 63,602 turns in the D20 data. This includes speech turns that were singularly nonspeech, meaning one turn could just contain (laughter) or something similar.
+I ended up with a total of 201 json files (147 CR and 54 D20) in the shape of two dataframes. Once all dataframes were in their final forms, this put us at 434,050 rows (or speech turns) in the Critical Role data, and 63,602 turns in the D20 data.
 
 The Critical Role data is one full campaign, or adventure, played start to finish over a period of roughly four years. The group is made up of one DM and seven consistent players. There are a handful of guests who appear for an episode or two who are combined into an "other" category for tidiness sake in my analysis.<br>
 The Dimension 20 data consists of four campaigns of varying lengths, and three seasons of their post-game chat show they do about the episode just played. 
@@ -34,7 +32,7 @@ Dimension 20, in these sets, have eight players who are men, eight who are women
 
 ## Motivations & Research Questions
 
-My goal for my project has been to conduct a discourse analysis on these two data sets to look into the balance of DM to player speech between a man DM (Critical Role, Matt) and a woman DM (Dimension 20, Aabria).<br>
+My goal for my project is to conduct a discourse analysis on these two data sets to look into the balance of DM to player speech between a man DM (Critical Role, Matt) and a woman DM (Dimension 20, Aabria).<br>
 A secondary goal, while looking at the data, was to consider the balance at a table between players themselves, without the DM. Are players who are men or women talking more often, saying more words, taking more time? Or is there more of an equal balance?
 
 ## Analysis
@@ -43,7 +41,7 @@ My individual analysis for the two data sets can both be explored in my [noteboo
 The files cr_analysis.ipynb and d20_analysis.ipynb cover the numbers and my analysis and interpretations per set in some detail, and so this section will be dedicated to the *comparison* of the two.
 
 I did several more steps on the Critical Role data since it's where I started, like word lengths and average sentence length for sentences over a certain length. However since they were not extremely informative I did not repeat them for D20 and won't be further analyzing them.<br>
-Similarly, my early intention for this project was to include interruption as one of my metrics of study. I address this at the end of both notebook, but wanted to touch on it here as well. Without a significant time commitment, this aspect was difficult to quantify and was not analyzed. 
+Similarly, my early intention for this project was to include interruption as one of my metrics of study. I address this at the end of both notebooks, but wanted to touch on it here as well. Without a significant time commitment, this aspect was difficult to quantify and was not analyzed. 
 
 ### Speech Turns
 
@@ -56,13 +54,13 @@ Similarly, my early intention for this project was to include interruption as on
 
 ![screenshot](figures/d20_SpeechTurnGender.png)
 
-In consideration of players, both groups of men take more speech turns proportionally to anyone else, including the DM. I address the issue of attendance in both of my individual analysis notebooks here and here.<br>
+In consideration of players, both groups of men take more speech turns proportionally to anyone else, including the DM. I address the issue of attendance in both of my individual analysis notebooks [here](https://nbviewer.org/github/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/notebooks/cr_analysis.ipynb#Exploring-Results) and [here](https://nbviewer.org/github/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/notebooks/d20_analysis.ipynb#Exploring-Results).<br>
 
 Men outnumber women in Critical Role and have the more consistent attendance records, and as a result it's difficult to state decisively that men take more turns at that specific table, but in this dataset, they do. <br>
 Interestingly, even without the new inclusion of nonbinary players in Dimension 20 data, men take 14% more speech turns than women do. However, while there are eight participants per group, two of the men appear in multiple seasons being looked at in the data.<br>
 This inclusion of two players more than once may be affecting the proportions quite a bit. There are three repeats among them, if the casts were different but they were still men, that would make the totals 11 men to 8 women instead.
 
-What I'm most interested in, here, is the fact that when it comes to speech turns, the two DMs are not so deeply different. Matt takes a little over a quarter of all speech turns, and Aabria a bit under a third of turns. <br>
+What I'm most interested in, here, is the fact that when it comes to speech turns, the two DMs are not so widely different. Matt takes a little over a quarter of all speech turns, and Aabria a bit under a third of turns. <br>
 With only a 5% difference between them, proportionally to their players, I'm fascinated that they've landed quite closely together. It would be difficult, of course, for a single DM to out-speak a group of 3+ people alone, but the amount they do have is no small feat. <br>
 There are a total of 422,576 speech turn rows in the Critical Role data, meaning that over 100,000 belong to Matt alone. Similarly, D20 has 63,602 speech turn rows, with just over 21,000 belonging to Aabria.
 
@@ -77,7 +75,7 @@ There are a total of 422,576 speech turn rows in the Critical Role data, meaning
 
 ![screenshot](figures/d20_TokCountGender.png)
 
-As above, I have gone over the separate findings for these charts in their respective notebooks, here and here. <br>
+As above, I have gone over the separate findings for these charts in their respective notebooks, [here](https://nbviewer.org/github/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/notebooks/cr_analysis.ipynb#Word-Count) and here. <br>
 
 Because the total words count among players for Critical Role hover at about the same 60/40 split as the speech turns chart did (+1.8%), I feel like we are truly seeing the attendance issue at play here.<br>
 When the men at Critical Role speak up, which is more often than the women do, they are not taking up an extraordinary amount of time proportionally. <br>
@@ -191,7 +189,13 @@ On the other hand, Dimension 20 has a variety of genre in this data, an adventur
 
 ### Readability
 
+Only considering the results from the improved second run of the readability score testing. Our baseline score as conducted on the Player's Handbook [here](https://nbviewer.org/github/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/notebooks/ReadabilityRedux.ipynb), which has a pretty
+concentrated usage of D&D-focused vocabulary was 56. Ranked as "difficult to read" but on the easier side of it, around a 10th grade level. The spoken data scored much higher (and much easier) than the book, which makes sense. Almost all of the rankings were at a "conversational" level or easier.
+Since it *is* conversation, this feels like a reasonable assessment. 
 
+What I found most interesting is that, while all players scored in the 90+ range of very easy to understand, both DMs were scored at a more difficult range than the players. I believe this goes hand-in-hand with the jargon score. We saw that DMs have a high rate of jargon in proportion to their players,
+and both DM word clouds were more densely populated than the players. Many of the "jargon" words in the Handbook that made it to the defined list were specialized and a bit long. More inclusion of jargon would likely correlate to a lower (more difficult) readability score. 
+Both DMs are 87 and 89, with Aabria ranked just a little bit easier than Matt. 
 
 
 ## Conclusions & Reflections
@@ -217,4 +221,20 @@ Her findings showed that if you measure in amount of words or in minutes, men sp
 
 ## Resources
 
+“Episode Transcripts.” Dimension 20 Wiki, Fandom, Inc., 2022, dimension20.fandom.com/wiki/Episode_Transcripts. Accessed 29 Apr. 2025.
 
+Flesch, R. (2016, July 12). Guide to Academic Writing Article - Management - University of Canterbury - New Zealand. Web.archive.org. https://web.archive.org/web/20160712094308/http://www.mang.canterbury.ac.nz/writing_guide/writing/flesch.shtml
+
+ila. (2020, November 24). Speaking Up: The Double Bind of Women’s Voices in Business. The Startup. https://medium.com/swlh/speaking-up-the-double-bind-of-womens-voices-in-business-592b0b56732c
+
+Langridge , Stuart . “Critical Role Linked Transcript Search.” Kryogenix.org, 2025, www.kryogenix.org/crsearch/.
+
+Mearls, Mike, and Jeremy Crawford. Dungeons & Dragons Player’s Handbook. 5th ed., Renton, Wa, Wizards of the Coast, Aug. 2014.
+
+Norvig, P. (2009). Natural Language Corpus Data: Beautiful Data. Norvig.com. https://norvig.com/ngrams/
+
+Readable. (2023). Flesch Reading Ease and the Flesch Kincaid Grade Level. Readable. https://readable.com/readability/flesch-reading-ease-flesch-kincaid-grade-level/
+
+Scott, B. (2023, August 14). The SMOG Readability Formula, a Simple Measure of Gobbledygook. ReadabilityFormulas.com. https://readabilityformulas.com/the-smog-readability-formula/
+
+Spender, D. (1980). Man made language. Pandora.

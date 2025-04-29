@@ -8,7 +8,7 @@ Critical Role transcripts sourced from [Kryogenix](https://www.kryogenix.org/crs
 Dimension 20 transcripts sourced from the [fandom wiki](https://dimension20.fandom.com/wiki/Episode_Transcripts) with thanks to users: OliverC, Rachel S., Claire B., gluegunshots, Mer, Kyber Bonsai, tevildo, solys, Tillie the Paladin, kindlestuck, and Ethan Belanger.
 
 ## Hub Directory:<br>
-- **[final_report]**(https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/final_report.md): The final report and conclusions for my project
+- **[final_report](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/final_report.md)**: The final report and conclusions for my project
 - [D20json/](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/tree/main/D20json): a collection of the json translated files of the D20 transcripts divided by season/campaign
 - [data_processing/](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/tree/main/data_processing): JP notebooks showing my process after data aquistion, building dataframes (1: cr, d20) and cleaning data (2: cr, d20) [nbviewer version](https://nbviewer.org/github/Data-Science-for-Linguists-2025/Critical-Role-Analysis/tree/main/data_processing/)
 - [data_samples/](https://github.com/Data-Science-for-Linguists-2025/Critical-Role-Analysis/tree/main/data_samples): samples of the data as I worked with it (1 episode each), raw data as html/json and my starting datafame for the same episodes

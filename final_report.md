@@ -189,12 +189,9 @@ On the other hand, Dimension 20 has a variety of genre in this data, an adventur
 
 ### Readability
 
-Only considering the results from the improved second run of the readability score testing. Our baseline score as conducted on the Player's Handbook [here](https://nbviewer.org/github/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/notebooks/ReadabilityRedux.ipynb), which has a pretty
-concentrated usage of D&D-focused vocabulary was 56. Ranked as "difficult to read" but on the easier side of it, around a 10th grade level. The spoken data scored much higher (and much easier) than the book, which makes sense. Almost all of the rankings were at a "conversational" level or easier.
-Since it *is* conversation, this feels like a reasonable assessment. 
+Only considering the results from the improved second run of the readability score testing. Our baseline score as conducted on the Player's Handbook [here](https://nbviewer.org/github/Data-Science-for-Linguists-2025/Critical-Role-Analysis/blob/main/notebooks/ReadabilityRedux.ipynb), which has a pretty concentrated usage of D&D-focused vocabulary was 56. Ranked as "difficult to read" but on the easier side of it, around a 10th grade level. The spoken data scored much higher (and much easier) than the book, which makes sense. Almost all of the rankings were at a "conversational" level or easier. Since it *is* conversation, this feels like a reasonable assessment. 
 
-What I found most interesting is that, while all players scored in the 90+ range of very easy to understand, both DMs were scored at a more difficult range than the players. I believe this goes hand-in-hand with the jargon score. We saw that DMs have a high rate of jargon in proportion to their players,
-and both DM word clouds were more densely populated than the players. Many of the "jargon" words in the Handbook that made it to the defined list were specialized and a bit long. More inclusion of jargon would likely correlate to a lower (more difficult) readability score. 
+What I found most interesting is that, while all players scored in the 90+ range of very easy to understand, both DMs were scored at a more difficult range than the players. I believe this goes hand-in-hand with the jargon score. We saw that DMs have a high rate of jargon in proportion to their players, and both DM word clouds were more densely populated than the players. Many of the "jargon" words in the Handbook that made it to the defined list were specialized and a bit long. More inclusion of jargon would likely correlate to a lower (more difficult) readability score. 
 Both DMs are 87 and 89, with Aabria ranked just a little bit easier than Matt. 
 
 

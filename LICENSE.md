@@ -13,3 +13,7 @@ ShareAlike — If you remix, transform, or build upon the material, you must dis
 No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
 Please view link above for full details
+
+
+Dimension 20 transcripts were obtained under CC-BY-SA license.
+Critical Role transcripts didn't include license information, so only a small sample of the data has been shared.
